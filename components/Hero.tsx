@@ -1,6 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
         
         <Spotlight className='top -28 left-80 h-[80vh] w-[50vw]' fill='blue'/> 
         </div>    
-        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
 
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
       
@@ -24,6 +26,13 @@ const Hero = () => {
         <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
           Hi, I&apos;m Nevin, an Engineer based in Kerala, India
         </p>
+        <a href="#about">
+          <MagicButton
+          title="Show my work"
+          icon={<FaLocationArrow/>}
+          position='right'
+          />
+        </a>
       </div>
     </div>
     </div>
