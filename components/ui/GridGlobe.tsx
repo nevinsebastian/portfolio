@@ -202,7 +202,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       );
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     if (!globeRef.current || !globeData) return;
 
     const interval = setInterval(() => {
